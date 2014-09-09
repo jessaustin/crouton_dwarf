@@ -69,8 +69,8 @@ Now you need to install some libraries. `sudo` will ask for the password you
 configured earlier with `crouton`. 
 
 ```sh
-  (dwarf)fortress@localhost:~$ sudo apt-get install -y libsdl-image1.2 libsdl-sound1.2 libsdl-ttf2.0-0 \
-  libgtk2.0-0 libopenal1
+  (dwarf)fortress@localhost:~$ sudo apt-get install -y libsdl-image1.2 libsdl-sound1.2 \
+  libsdl-ttf2.0-0 libgtk2.0-0 libopenal1
   [sudo] password for fortress: 
 ```
 
@@ -86,8 +86,10 @@ Now you need to set up some library links, because [DF] is kind of silly:
 
 ```sh
   (dwarf)fortress@localhost:~$ cd df_linux/libs/
-  (dwarf)fortress@localhost:~/df_linux/libs$ ln -s /usr/lib/i386-linux-gnu/libopenal.so.1 libopenal.so
-  (dwarf)fortress@localhost:~/df_linux/libs$ ln -s /usr/lib/i386-linux-gnu/libsndfile.so.1 libsndfile.so
+  (dwarf)fortress@localhost:~/df_linux/libs$ ln -s /usr/lib/i386-linux-gnu/libopenal.so.1 \
+  libopenal.so
+  (dwarf)fortress@localhost:~/df_linux/libs$ ln -s /usr/lib/i386-linux-gnu/libsndfile.so.1 \
+  libsndfile.so
 ```
 
 Now you want to edit the configuration slightly. Specifically edit the
