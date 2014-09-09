@@ -70,7 +70,7 @@ configured earlier with `crouton`.
 
 ```sh
 (dwarf)fortress@localhost:~$ sudo apt-get install -y libsdl-image1.2 libsdl-sound1.2 \
-libsdl-ttf2.0-0 libgtk2.0-0 libopenal1
+      libsdl-ttf2.0-0 libgtk2.0-0 libopenal1
 [sudo] password for fortress: 
 ```
 
@@ -78,7 +78,8 @@ Finally we're ready to download [Dwarf Fortress][df]! The most recent version
 as of when I'm writing this is **0.40.11**. Download the tarfile and then untar it:
 
 ```sh
-(dwarf)fortress@localhost:~$ wget http://www.bay12games.com/dwarves/df_40_11_linux.tar.bz2
+(dwarf)fortress@localhost:~$ wget \
+      http://www.bay12games.com/dwarves/df_40_11_linux.tar.bz2
 (dwarf)fortress@localhost:~$ tar -xjf df_40_11_linux.tar.bz2
 ```
 
@@ -87,9 +88,9 @@ Now you need to set up some library links, because [DF] is kind of silly:
 ```sh
 (dwarf)fortress@localhost:~$ cd df_linux/libs/
 (dwarf)fortress@localhost:~/df_linux/libs$ ln -s \
-/usr/lib/i386-linux-gnu/libopenal.so.1 libopenal.so
+      /usr/lib/i386-linux-gnu/libopenal.so.1 libopenal.so
 (dwarf)fortress@localhost:~/df_linux/libs$ ln -s \
-/usr/lib/i386-linux-gnu/libsndfile.so.1 libsndfile.so
+      /usr/lib/i386-linux-gnu/libsndfile.so.1 libsndfile.so
 ```
 
 Now you want to edit the configuration slightly. Specifically edit the
