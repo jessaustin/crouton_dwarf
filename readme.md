@@ -105,5 +105,5 @@ use graphics and tilesets. For now, just run [DF][df] and watch that awesome int
   (dwarf)fortress@localhost:~$ startx ./df_linux/df
 ```
 
-[df] //www.bay12games.com/dwarves/ "Dwarf Fortress"
-[cr] //github.com/dnschneid/crouton "Crouton"
+[df]: //www.bay12games.com/dwarves/ "Dwarf Fortress"
+[cr]: //github.com/dnschneid/crouton "Crouton"
