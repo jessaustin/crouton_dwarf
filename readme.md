@@ -86,10 +86,10 @@ Now you need to set up some library links, because [DF] is kind of silly:
 
 ```sh
 (dwarf)fortress@localhost:~$ cd df_linux/libs/
-(dwarf)fortress@localhost:~/df_linux/libs$ ln -s /usr/lib/i386-linux-gnu/libopenal.so.1 \
-libopenal.so
-(dwarf)fortress@localhost:~/df_linux/libs$ ln -s /usr/lib/i386-linux-gnu/libsndfile.so.1 \
-libsndfile.so
+(dwarf)fortress@localhost:~/df_linux/libs$ ln -s \
+/usr/lib/i386-linux-gnu/libopenal.so.1 libopenal.so
+(dwarf)fortress@localhost:~/df_linux/libs$ ln -s \
+/usr/lib/i386-linux-gnu/libsndfile.so.1 libsndfile.so
 ```
 
 Now you want to edit the configuration slightly. Specifically edit the
@@ -103,8 +103,8 @@ You'll probably want to come back and edit this file some more so that you can
 use graphics and tilesets. For now, just run [DF] and watch that awesome intro:
 
 ```sh
-  (dwarf)fortress@localhost:~/df_linux/data/init$ cd
-  (dwarf)fortress@localhost:~$ startx ./df_linux/df
+(dwarf)fortress@localhost:~/df_linux/data/init$ cd
+(dwarf)fortress@localhost:~$ startx ./df_linux/df
 ```
 
 [df]: //www.bay12games.com/dwarves/ "Dwarf Fortress"
