@@ -2,11 +2,11 @@ Dwarf Fortress in Crouton
 =========================
 
 I don't always play [Dwarf Fortress][df], but when I do, I prefer a chromebook.
-Here are the steps for getting [DF][df] working in glorious fullscreen X11, in
+Here are the steps for getting [DF] working in glorious fullscreen X11, in
 [Crouton][cr]. I am *not* setting up a window manager etc. for this, because
 that would be overkill and overcomplicated. I *am* targeting 32 bit, because
-that's what [DF][df] likes. It's not a problem to have a chroot especially for
-[DF][df], because as the [crouton][cr] folks say, "Chroots are cheap!"
+that's what [DF] likes. It's not a problem to have a chroot especially for
+[DF], because as the [crouton][cr] folks say, "Chroots are cheap!"
 
 First of all, I assume you have your chromebook in developer mode. I won't help
 you do this because brickage, but you might want to [start
@@ -28,7 +28,7 @@ Now put [crouton][cr] to work:
 
 This command builds a chroot for the `i386` 32-bit architecture, because that
 avoids some fiddling with settings later. It targets `X11`, because that's what
-we need to run [DF][df] outside a terminal. It builds the
+we need to run [DF] outside a terminal. It builds the
 [trusty](https://wiki.ubuntu.com/TrustyTahr) Ubuntu release, but you could
 probably change that if you want. Also the chroot is named `dwarf`. This
 command will happily download and build by itself for some time, but eventually
@@ -82,7 +82,7 @@ as of when I'm writing this is **0.40.11**. Download the tarfile and then untar 
   (dwarf)fortress@localhost:~$ tar -xjf df_40_11_linux.tar.bz2
 ```
 
-Now you need to set up some library links, because [DF][df] is kind of silly:
+Now you need to set up some library links, because [DF] is kind of silly:
 
 ```sh
   (dwarf)fortress@localhost:~$ cd df_linux/libs/
@@ -98,7 +98,7 @@ Now you want to edit the configuration slightly. Specifically edit the
 ```
 
 You'll probably want to come back and edit this file some more so that you can
-use graphics and tilesets. For now, just run [DF][df] and watch that awesome intro:
+use graphics and tilesets. For now, just run [DF] and watch that awesome intro:
 
 ```sh
   (dwarf)fortress@localhost:~/df_linux/data/init$ cd
